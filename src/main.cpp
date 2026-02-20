@@ -11,11 +11,14 @@ const int PRESSURE_THRESHOLD = 200;
 
 void setup() {
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
+    // TODO 3: Initialize Serial communication (9600 baud rate)
+    Serial.begin(9600);
 
-    // TODO 4:
-    // Print system initialization message
+    // TODO 4: Print system initialization message
+    Serial.println("======================================");
+    Serial.println(" Embedded Force Measurement System ");
+    Serial.println("======================================");
+    Serial.println("Monitoring FSR sensor on A0...");
 }
 
 void loop() {
